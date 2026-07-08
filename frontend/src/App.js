@@ -10,7 +10,7 @@ import Prescriptions from './pages/PrescriptionsPage';
 import Reports from './pages/ReportsPage';
 import ProtectedRoute from './components/ProtectedRoute';
 import { AuthProvider } from './context/AuthContext';
-
+import LandingPage from './pages/LandingPage';
 import DashboardUser from './pages/DashboardUser';
 import ValidateLogin from './components/ValidateLogin';
 import UserRoleSelection from './pages/UserRoleSelection';
@@ -29,7 +29,7 @@ const App = () => {
           <Route path="/patients" element={<Patients />} />
           <Route path="/prescriptions" element={<ProtectedRoute> <Prescriptions /> </ProtectedRoute> } />
           <Route path="/reports" element={<ProtectedRoute> <Reports /> </ProtectedRoute>} />
-
+          <Route path="/landing" element={<LandingPage />} />
 
           <Route path="/" element={<UserRoleSelection />} />
 
